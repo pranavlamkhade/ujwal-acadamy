@@ -1,7 +1,8 @@
 
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { RouterModule } from '@angular/router';
+
 
 
 interface Teacher {
@@ -13,7 +14,7 @@ interface Teacher {
 @Component({
   selector: 'app-our-team',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterModule],
   templateUrl: './our-team.component.html',
   styleUrls: ['./our-team.component.scss']
 })
