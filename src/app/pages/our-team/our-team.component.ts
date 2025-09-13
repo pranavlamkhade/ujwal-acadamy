@@ -25,12 +25,12 @@ export class OurTeamComponent {
   teachers: Teacher[] = [
     {
       name: 'Prapti Sonar',
-      role: 'Founder & Lead Trainer',
+      role: 'Lead Trainer',
       image: 'assets/team/lead_trainer.jpeg'
     },
     {
-      name: 'Sneha Patil',
-      role: 'Graphics & UI/UX Trainer',
+      name: 'Pratibha Gaydhare',
+      role: 'Trainer',
       image: 'assets/team/trainer.jpeg'
     }
   ];
