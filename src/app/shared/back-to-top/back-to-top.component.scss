@@ -1,4 +1,7 @@
 /* Default (desktop & tablet) */
+
+@use 'sass:color';
+
 .back-to-top {
   position: fixed;
   bottom: 24px;
@@ -16,7 +19,7 @@
   transition: opacity .3s ease;
 
   &:hover {
-    background: darken(#0d6efd, 5%);
+    background: color.adjust(#d6efbd, $lightness: -5%);
   }
 }
 
