@@ -1,12 +1,27 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { SocialBarComponent } from "./shared/social-bar/social-bar.component";
+import { BackToTopComponent } from "./shared/back-to-top/back-to-top.component";
+import { BreadcrumbComponent } from "./shared/breadcrumb/breadcrumb.component";
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, SocialBarComponent, BackToTopComponent, BreadcrumbComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ujwal-academy';
+  constructor(private router: Router) {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo(0, 0); // ✅ force scroll top
+      });
+  }
 }
