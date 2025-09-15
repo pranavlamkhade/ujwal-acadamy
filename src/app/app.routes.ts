@@ -15,6 +15,8 @@ import { MlAiComponent } from './pages/all-courses/ml-ai/ml-ai.component';
 import { CCcppComponent } from './pages/all-courses/c-cpp/c-cpp.component';
 import { GraphicsDesignComponent } from './pages/all-courses/graphics-design/graphics-design.component';
 import { OurTeamsDetailComponent } from './pages/our-teams-detail/our-teams-detail.component';
+import { OfferModalComponent } from "./core/offer-modal/offer-modal.component";
+
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, title: 'Ujwal Academy' },
@@ -25,6 +27,7 @@ export const routes: Routes = [
     { path: 'about', component: AboutComponent, data: { breadcrumb: 'About' } },
     { path: 'all-courses', component: AllCoursesComponent, data: { breadcrumb: 'All Courses' } },
     { path: 'about-details', component: AboutDetailsComponent, data: { breadcrumb: 'About Details' } },
+    { path: 'offer-model', component: OfferModalComponent},
     {
       path: 'our-teams-detail',
       component: OurTeamsDetailComponent,

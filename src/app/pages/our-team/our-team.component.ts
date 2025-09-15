@@ -26,7 +26,7 @@ export class OurTeamComponent {
     {
       name: 'Prapti Sonar',
       role: 'Lead Trainer',
-      image: 'assets/team/lead_trainer.jpeg'
+      image: 'assets/team/lead-trainer.jpeg'
     },
     {
       name: 'Pratibha Gaydhare',
