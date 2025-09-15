@@ -120,14 +120,14 @@
 /* ------------------ MOBILE-FRIENDLY FIXES ------------------ */
 
 /* Ensure the image container allows the poster to show fully on small screens */
-.offer-media {
+// .offer-media {
   /* default desktop sizing above; mobile behavior handled below in breakpoints */
-}
+// }
 
 /* Make the <img> show entire poster (no crop) and scale to available space */
-.offer-media img {
+// .offer-media img {
   /* object-fit already set above; keep max-height for desktop but allow override in media queries */
-}
+// }
 
 /* RESPONSIVE: tablet / small-desktop */
 @media (max-width: 880px) {
