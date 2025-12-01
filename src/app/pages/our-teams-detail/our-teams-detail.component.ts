@@ -36,11 +36,7 @@ export class OurTeamsDetailComponent {
       role: 'Lead Trainer',
       image: 'assets/team/lead-trainer.jpeg'
     },
-    {
-      name: 'Pratibha Gaydhare',
-      role: 'Trainer',
-      image: 'assets/team/trainer.jpeg'
-    }
+    
   ];
 
   // ✅ Common experties & services for staff
